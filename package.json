@@ -1,5 +1,5 @@
 {
-  "name": "kgot_node_api",
+  "name": "@kappa-gamma/api.brothers",
   "version": "1.0.0",
   "description": "nodejs api for kgotweb",
   "main": "index.js",
@@ -14,9 +14,9 @@
   "author": "samsonjj",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samsonjj/kgotwebnodeapi/issues"
+    "url": "https://github.com/kappa-gamma-theta-tau/api.brothers/issues"
   },
-  "homepage": "https://github.com/samsonjj/kgotwebnodeapi#readme",
+  "homepage": "https://github.com/kappa-gamma-theta-tau/api.brothers/issues",
   "devDependencies": {
     "nodemon": "^1.17.3"
   },
