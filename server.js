@@ -1,11 +1,26 @@
-var express = require('express'),
-	app = express(),
-	port = process.env.PORT || 3000;
+var express 		= require('express');
+var bodyParser 	= require('body-parser');
+var morgan 			= require('morgan');
+var config 			= require('./api/config');
 
-var models = require('./api/models/brotherListModel');
-var routes = require('./api/routes/brotherListRoutes'); //importing route
+var app = express();
+
+
+// configure app
+app.use(morgan('dev'));
+
+// configure body parser
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+
+
+var routes = require('./api/routes/brotherRoutes');
+
+
+
 routes(app);
 
-app.listen(port);
+app.listen(config.port);
 
-console.log('kgotweb server started on: ' + port);
+console.log('kgotweb server started on: ' + config.port);
