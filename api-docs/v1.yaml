@@ -1,0 +1,29 @@
+swagger: "2.0"
+
+info:
+  description: "Api for the Kappa Gamma chapter of Theta Tau, located at Virginia Commonwealth University."
+  version: "1.0.0"
+  title: "Kgot Api"
+  contact:
+    email: "kgot.website@gmail.com"
+  
+paths:
+  /brothers:
+    get:
+      summary: Gets all brothers
+      description: Returns a list containing all brothers.
+      responses:
+        200:
+          description: A list of brothers
+          schema:
+            type: array
+            items:
+              required:
+                - rollNumber
+              properties:
+                firstName:
+                  type: string
+                middleName:
+                  type: string
+                lastName:
+                  type: string
