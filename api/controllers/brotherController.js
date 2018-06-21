@@ -1,4 +1,4 @@
-var brother = require('../models/brother');
+var brother = require('../models/Brother');
 var mysql = require('mysql');
 
 var pool = require('../connectionPool')
