@@ -1,4 +1,4 @@
-exports = class Brothers {
+exports = class Brother {
 
 	constructor(rollNumber, firstName, middleName, lastName) {
 		this.rollNumber = rollNumber;
